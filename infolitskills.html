@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	
+		body{margin:0;}
+		
+		.navbar{
+			overflow:hidden;
+			background-color: #333;
+			position: fixed;
+			top:0;
+			width:100%;
+		}
+		
+		.navbar a {
+			float:left;
+			display:block;
+			color:#f2f2f2;
+			text-align:center;
+			padding: 14px 16px;
+			text-decoration:none;
+			font size:24px;
+		}
+		
+		.navbar a:hover {
+			background:#ddd;
+			color:black;
+		}
+	
+		.main {
+			padding:16px;
+			margin-top:10px;
+			height:1500px;
+		}
+		
+		
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Shadows into Light", sans-serif;
+}
+
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("post-it.jpg");
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.title-1 {
+	position: relative;
+	top: 330px;
+}
+
+.border-1{
+	border: 2px solid black;
+	outline: lavender solid 10px;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+	top:370px;
+	
+}
+
+.title-2{
+	position: relative;
+	top: 400px;
+}
+
+.rounded-corner-1 {
+	border-radius: 25px;
+	border: 6px solid lavender;
+	padding: 20px;
+	width: 100px;
+	height: 100px;
+	margin-top: 30px;
+	position: relative;
+	top: 430px;
+	left:100px;
+}
+
+.rounded-corner-2 {
+	border-radius: 25px;
+	border: 6px solid lavender;
+	padding: 20px;
+	width: 100px;
+	height: 100px;
+	margin-top: 30px;
+	position: relative;
+	top: 250px;
+	left:350px;
+}
+
+.rounded-corner-3 {
+	border-radius: 25px;
+	border: 6px solid lavender;
+	padding: 20px;
+	width: 100px;
+	height: 100px;
+	margin-top: 30px;
+	position: relative;
+	top: 70px;
+	left:620px;
+}
+
+.rounded-corner-4{
+	border-radius: 25px;
+	border: 6px solid lavender;
+	padding: 20px;
+	width: 100px;
+	height: 100px;
+	margin-top: 30px;
+	position: relative;
+	top: -110px;
+	left:890px;
+}
+
+.rounded-corner-5{
+	border-radius: 25px;
+	border: 6px solid lavender;
+	padding: 20px;
+	width: 100px;
+	height: 100px;
+	margin-top: 30px;
+	position: relative;
+	top: -290px;
+	left:1160px;
+}
+
+.title-3{
+	position: relative;
+	top:-150px;
+}
+
+.title-4{
+	position: relative;
+	top:-80px;
+}
+
+.find{
+	width: 300px;
+	height: 100px;
+	padding: 10px;
+	border: 10px solid mediumpurple;
+	margin: 10px;
+	position: relative;
+	top: -70px;
+}
+
+.pic-1{
+    position: relative;
+    top:-820px;
+    left:550px;
+}
+
+.container{
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+ 
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: mediumpurple;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.find-2 {
+  column-count: 3;
+  column-width: 50px;
+  column-rule-style: solid;
+  column-rule-width: 3px;
+  column-rule-color: mediumpurple;
+  padding: 15px;
+  position: relative;
+  top: -730px;
+}
+
+.title-5{
+	position: relative;
+	top:-650px;
+}
+
+.pic-2{
+	position:relative;
+    top:-1250px;
+    left:550px;
+}
+
+.container{
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+ 
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: mediumpurple;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.identify{
+	width: 300px;
+	height: 100px;
+	padding: 10px;
+	border: 10px solid mediumpurple;
+	margin: 10px;
+	position: relative;
+	top: -1400px;
+}
+
+.identify-2{
+  column-count: 3;
+  column-width: 50px;
+  column-rule-style: solid;
+  column-rule-width: 3px;
+  column-rule-color: mediumpurple;
+  padding: 15px;
+  position: relative;
+  top: -1300px;
+}
+
+.title-6{
+	position: relative;
+	top: -1200px;
+}
+
+.pic-3{
+	position:relative;
+    top:-1750px;
+    left:550px;
+}
+
+.container{
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+ 
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.evaluate{
+	width: 300px;
+	height: 100px;
+	padding: 10px;
+	border: 10px solid mediumpurple;
+	margin: 10px;
+	position: relative;
+	top: -1950px;
+}
+
+.evaluate-2{
+  column-count: 3;
+  column-width: 50px;
+  column-rule-style: solid;
+  column-rule-width: 3px;
+  column-rule-color: mediumpurple;
+  padding: 15px;
+  position: relative;
+  top: -1850px;
+}
+
+.title-7{
+	position: relative;
+	top: -1700px;
+}
+
+.pic-4{
+	position:relative;
+    top:-2300px;
+    left:550px;
+}
+
+.container{
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+ 
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+
+.analyse{
+	width: 350px;
+	height: 180px;
+	padding: 10px;
+	border: 10px solid mediumpurple;
+	margin: 10px;
+	position: relative;
+	top: -2450px;
+}
+
+.analyse-2{
+  column-count: 3;
+  column-width: 50px;
+  column-rule-style: solid;
+  column-rule-width: 3px;
+  column-rule-color: mediumpurple;
+  padding: 15px;
+  position: relative;
+  top: -2400px;
+}
+
+.title-8{
+	position: relative;
+	top:-2300px;
+}
+
+.pic-5{
+	position:relative;
+    top:200px;
+    left:550px;
+}
+
+.container{
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+ 
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.apply-1{
+	width: 230px;
+	height: 130px;
+	padding: 10px;
+	border: 10px solid mediumpurple;
+	margin: 10px;
+	position: relative;
+	top: -3100px;
+}
+
+.apply-2{
+  column-count: 3;
+  column-width: 50px;
+  column-rule-style: solid;
+  column-rule-width: 3px;
+  column-rule-color: mediumpurple;
+  padding: 15px;
+  position: relative;
+  top: -3000px;
+}
+
+.title-9{
+	position: relative;
+	top: -2900px;
+}
+
+.rounded-corner-6 {
+	border-radius: 25px;
+	border: 10px solid lavender;
+	padding: 20px;
+	width: 800px;
+	height: 450px;
+	margin-top: 30px;
+	position: relative;
+	top: -2800px;
+	left:300px;
+}
+
+.title-10{
+	position: relative;
+	top:-2700px;
+}
+
+.responsive-image-grid {
+  text-align: center;
+  padding: 32px;
+  position: relative;
+  top: -2700px;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  -ms-flex: 25%; 
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.icon { position: relative;
+  top:-3100px;
+}
+
+img {
+  border-radius: 10%;
+  margin-top:600px;
+  
+ 
+  
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  position:relative;
+  top:-3100px;
+ 
+ 
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+  position: relative;
+  top:-3100px;
+ 
+}
+
+.round {
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+	
+	<div class="hero-image">
+
+	<div class="navbar">
+		<a href="index.html">Home</a>
+		<a href= "fakenews.html" >What Is Fake News?</a>
+		<a href="fakenewstypes.html">Types of Fake News</a>
+		<a href="infolit.html">What Is Information Literacy?</a>
+		<a href="infolitskills.html">Information Literacy Skills</a>
+		<a href="tasks.html">Tasks</a>
+	</div>
+
+<div class="title-1">
+	<h1> Information Literacy Skills</h1>
+</div>
+
+<div class="border-1">
+	Information literacy skills largely consist of the following, the ability to: <b>find, identify, critically evaluate, analyse and apply information. </b>
+</div>
+
+<div class="title-2">
+	<h3><b>In the survey carried out for the purpose of this website, users were asked if they were unfamiliar or less familiar with any of these skills compared to others: </b></h3>
+</div>
+
+<div class="rounded-corner-1">
+	3 users said they struggled with <b>analysing</b>.
+</div>
+
+<div class="rounded-corner-2">
+	3 users said they struggled with <b>evaluating</b>. 
+</div>
+
+<div class="rounded-corner-3">
+	2 users said they struggled to <b>find </b>sources.
+</div>
+
+<div class="rounded-corner-4">
+	1 user found it difficult to <b>identify </b>credible sources.
+</div>
+
+<div class="rounded-corner-5">
+	<br>Remaining users were <b>unsure</b>. 
+</div>
+
+<div class="title-3">
+	<h3><b>This section will, therefore, go through each skill carefully in order to provide additional help in overcoming the struggles surrounding the understanding of each skill.</b></h3>
+</div>
+
+<div class="title-4">
+	<h2><u> Find</u></h2>
+</div>
+
+<div class="find">
+	The Oxford English Dictionary <a href="https://www.oed.com/dictionary/find_v?tab=meaning_and_use#1209113040">(OED) </a> defines <b>'find'</b> as: "to discover or obtain by searching". 
+</div>
+
+<div class="pic-1">
+		<div class="container">
+		  <img src="research.png" alt="magnifying glass" class="image" style="width:30%">
+		  <div class="middle">
+		    <div class="text">Credit To: ibrandify</div>
+		  </div>
+		</div>
+	</div>
+		
+		<div class="find-2">
+			In information literacy terms, the ability to find is a crucial one. Depending on what kind of information you are looking for, you need to be aware of how to find this information, e.g. where is the best place to look that is going to give you the best results the fastest? For example, if you are writing an essay for school or for college/university, you may turn to resources such as Google Scholar (insert link), which will direct you to a number of academic papers on similar topics. However, this process can also be made more effective by using the advanced search option (which is available on most search engines). This allows users to adapt the details of their search to fit a more narrowed scale by selecting factors such as dates they are interested in, or key words to highlight. Here is a useful guide to using advanced search tools on google:<a href= "https://support.google.com/websearch/answer/35890?hl=en&co=GENIE.Platform%3DDesktop">'Google Search Help'</a>. Being able to find the correct information that goes towards a purpose is an imperative skill to have; especially in a society shrouded by so many sources of false information. Thus, being able to use tools, such as advanced search, can help eliminate the risk of falling into the trap of fake news- especially if you stick to reliable places like Google Scholar, or academic libraries online, etc. 
+		</div>
+		
+		<div class="title-5">
+			<h2><u>Idenitfy</u></h2>
+		</div>
+		
+		<div class="pic-2">
+		<div class="container">
+		  <img src="feature-selection.png" alt="identify" class="image" style="width:30%">
+		  <div class="middle">
+		    <div class="text">Credit To: juicy_fish</div>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="identify">
+		The Oxford English Dictionary <a href="https://www.oed.com/dictionary/identify_v?tab=meaning_and_use">(OED)</a> defines <B>'identify'</b> as: "To discover, distinguish, isolate; to locate and recognize or describe."
+	</div>
+	
+	<div class="identify-2">
+		While the skill of identifying may seem similar to the skill of finding, there is a difference between the two. As previously discussed, it is one thing to find a potential source of information, however if you plan to use this information you have found, you must be able to identify both if it is necessary- does it add to your purpose?- and is the information reliable?  As discussed in the 'What is Fake News?' section of this website, users who took part in the survey were asked what were some key characteristics of a source of fake news, some of these answers included: "spelling errors", "blown up headlines", "hyperbole", and more. This demonstrates users ability to identify as they were aware of things to look out for, key indicators. Thus, it is useful when finding information to be aware of key characteristics that may be present for you to identify in order to determine whether the information you are looking at is reliable or not/ useful or not. Here is a link to a useful article that explores the skills of identifying in more depth: <a href=  "https://milnepublishing.geneseo.edu/the-information-literacy-users-guide-an-open-online-textbook/chapter/identify-understanding-your-information-need/">'Identify: Understanding Your Information Need'</a>
+	</div>
+	
+	<div class="title-6">
+		<h2><u>Evaluate</u></h2>
+	</div>
+	
+		<div class="pic-3">
+		<div class="container">
+		  <img src="test.png" alt="evaluate" class="image" style="width:30%">
+		  <div class="middle">
+		    <div class="text">Credit To: Freepik</div>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="evaluate">
+		The Cambridge Dictionary <a href="https://dictionary.cambridge.org/dictionary/english/evaluate">(CD)</a>defines <b>'evaluate'</b> as: "to judge or calculate the quality, importance, amount, or value of something".
+	</div>
+	
+	<div class="evaluate-2">
+		The ability to critically evaluate is one that people often struggle with. In simple terms, the ability to evaluate refers to the ability to break things down into smaller parts in order to form an opinion that is backed up by evidence in a sort of balanced debate. For example, if you were asked to evaluate a specific argument for a piece of work, essay, etc you should look at both sides of the argument provided in order to pick one that you agree with more, always having the information there to support <b>why </b>you came to this conclusion. A few ways that could make this process of evaluation easier is creating a pros and cons list, making a spider diagram of different argument strands, etc. Here is a link to a useful guide to critical evaluation: <a href="https://www.oxbridgeessays.com/blog/focus-directive-essay-words-critically-evaluate-critically-review/">'Essay Question Words:"critically evaluating review" '</a>
+	</div>
+	
+	<div class="title-7">
+		<h2><u>Analyse</u></h2>
+	</div>
+	
+		<div class="pic-4">
+		<div class="container">
+		  <img src="analyse.png" alt="analysis" class="image" style="width:30%">
+		  <div class="middle">
+		    <div class="text">Credit To: Uniconlabs</div>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="analyse">
+		The Oxford English Dictionary <a href="https://www.oed.com/dictionary/analyse_v?tab=meaning_and_use#4207085">(OED)</a> defines <b>'analyse'</b> as: "To differentiate or ascertain the elements of (something complex) in order to determine its structure or nature, and hence to explain or understand it; to examine closely and methodically for the purpose of interpretation; to subject to critical or computational analysis".
+	</div>
+	
+	<div class="analyse-2">
+		The ability to analyse is one often confused with evaluation skills. In short, analysing skills can be split up into smaller sections that are: <b>compare, contrast and connect</b>. In analysing information you should be able to compare it to other pieces of information and ask yourself questions such as, what similarities are present?, how does it differ from other information?, how might these similarities and differences make this information useful?  This allows for useful notes to be made about the information you are presented with and can allow you to view it/ approach it in a different way, all of which can thus be used to make a connection between issue and information. There are some useful tricks that can make the analysing process easier. For example, if you were given a text or a poem to analyse, you could: make text annotations with highlighters and images to both make the process feel more fun and also help you make text associations with colours, etc, you could also create short summaries for each chapter/ stanza, you could make a mind-map with different thoughts and ideas, and more. Here is the link to a useful study guide when it comes to analysing information: <a href="https://www.wikihow.com/Analyze-Texts">'How to Analyze Texts'.</a>
+	</div>
+	
+	<div class="title-8">
+		<h2><u>Apply</u></h2>
+	</div>
+	
+		<div class="pic-5">
+		<div class="container">
+		  <img src="apply.png" alt="apply" class="apply icon" style="width:30%">
+		  <div class="middle">
+		    <div class="text">Credit To:Freepik</div>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="apply-1">
+		The Merriam-Webster Dictionary <a href="https://www.merriam-webster.com/dictionary/apply">(MWD)</a> defines <b>'apply'</b> as: "to have relevance or a valid connection".
+	</div>
+	
+	<div class="apply-2">
+		All of the aforementioned skills are useless without the ability to apply information correctly. Information should, thus, be applied and organised based on the relationships between ideas; information is only useful when in the correct place. For example, statistics and information about the rise of fake news is useful information when placed next to corresponding information about fake news; it would be completely useless if placed in an article about cars. Therefore, a helpful way to ensure you are applying information to the necessary issue/topic is to firstly write down the overarching issue and make a list of similar topics that relate to the main issue, stay within the bounds of these topics so that the greater issue does not become too broad to the point where information becomes lost and incoherent. It is important to have a focal point to always return to and show how newly gathered information can be applied to this focal point. Trigger phrases such as, 'this applies to… because…', 'this is relevant because...', 'this can be used in relevance to... due to…' can all be useful in making sure you are consistently applying information to the main issue. Here is the link to a useful guide on applying information: <a href="https://edu.gcfglobal.org/en/useinformationcorrectly/putting-info-together/1/#">'Putting information together'.</a>
+	</div>
+	
+	<div class="title-9">
+		<h2><u>How do these skills relate to the combat against fake news?</u></h2>
+	</div>
+	
+	<div class="rounded-corner-6">
+		<p>Developing information literacy skills can help users identify fake news sources in an online space. It can also aide us in our everyday life in education, citizenship, workspaces, health care spaces, etc. </p>
+			<p>Information literacy can help us better understand and analyse the world around us. It can also help us develop critical thinking skills that can be carried through education and into the workplace. In terms of healthcare, there is so much misinformation and scaremongering via fake news online about the health care system in particular - look to COVID-19 pandemic when the spread of misinformation was rife- thus the development of information literacy skills can help users gain confidence  online when searching for reliable sources on topics that matter to them.  </p>
+			<p>Information literacy skills are also imperative in contributing to online safety. Users must be aware of their digital footprint and privacy, especially in things like online transactions etc. It is so easy to be hacked/doxed online, if users are aware of what signs to look for then this can become a preventable issue.</p>
+	<p>	Information literacy skills can also aide users in learning how to be ethical online. Users of any online space must be aware of the fact that there is no such thing as 'deleting' something from the online sphere, once it is posted it exists forever in some capacity. There are so many examples of public figures being 'cancelled' online for things like tweets they have posted a decade ago that are considered offensive in todays society and are brought back up again to use against these figures. Thus, it has become even more imperative to be ethical online nowadays due to the risks that publicly airing things like political opinions etc brings, For example, something you posted on Facebook when you were fifteen could go against you in a job interview when you are thirty.</p>
+	
+	</div>
+	
+	<div class="title-10">
+		<h3><b> Here are some examples of what survey participants thought of information literacy's potential role in defeating fake news: </b></h3>
+	</div>
+	
+
+	<div class="responsive-image-grid">
+  
+	
+	<div class="row"> 
+	  <div class="column">
+	    <img src="survey-1.png" style="width:100%">
+	    <img src="survey-2.png" style="width:100%">
+
+	  </div>
+	  <div class="column">
+	    <img src="survey-3.png" style="width:100%">
+	    <img src="survey-4.png" style="width:100%">
+   
+	  </div>  
+	  <div class="column">
+	    <img src="survey-5.png" style="width:100%">
+	    <img src="survey-6.png" style="width:100%">
+   
+	  </div>
+	  
+	</div>
+	
+</div>
+<div class="icon">	
+<p><img src="information.png" alt="Information icon" style="width:200px"><p>
+</div>
+<a href="infolit.html" class="previous">&laquo; Previous</a>
+<a href="tasks.html" class="next">Next &raquo;</a>
+
+</body>
+</html>
